@@ -117,7 +117,9 @@ class Rush_buy(object):
 
 if __name__ == '__main__':
     try:
+        #输入抢购时间
         buy_t = '2018-12-07 09:11:00'
+        #此处可以选择谷歌或者火狐浏览器或其他
         driver_path = os.path.abspath(os.path.curdir) + '/chromedriver'
         if not os.path.exist(os.path.abspath(os.path.curdir) + '/chromedriver')
             driver_path = ''
