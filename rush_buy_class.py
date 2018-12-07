@@ -119,6 +119,8 @@ if __name__ == '__main__':
     try:
         buy_t = '2018-12-07 09:11:00'
         driver_path = os.path.abspath(os.path.curdir) + '/chromedriver'
+        if not os.path.exist(os.path.abspath(os.path.curdir) + '/chromedriver')
+            driver_path = ''
         buy_time = datetime.datetime.strptime(buy_t, '%Y-%m-%d %H:%M:%S')
     except Exception, e:
         print '输入的时间格式有误,请输入时间:年-月-日 时:分:秒'
